@@ -2,6 +2,9 @@
 
 ![Voltage Foundry Modular Logo](./images/VFM_Logo.png)
 
+⚠️ I'm currently finishing a redesign of the hardware and will be ready soon, if you plan to build it, message me thru an issue. 
+⚠️
+
 This repository hosts the **Forge** series of modules for the Eurorack format. The **Forge** series is a collection of firmwares developed for the Forge V1 platform based on the Seeeduino Xiao and MCP4725 DAC and Forge V2 hardware based on the Seeeduino Xiao RP2040 anf the MCP4728 DAC.
 
 The modules are designed to be easy to build and modify and be built with through-hole components. The firmware is based on the Arduino platform.
