@@ -1,0 +1,32 @@
+﻿Bill of Materials (BOM) for THT Components:
+
+On Main Board:
+
+1x Seeedstudio XIAO RP2040
+2x 1x8 pin header for board interconnection
+1x 2x5 pin header for power input
+1x 2x4 pin header for expander module
+2x 1x7 pin socket for Seeed Xiao board
+4x 2k Vishay T93YA/Bourns 3296W vertical trimmer
+
+Control Board:
+
+1x Alps EC11 Rotary Encoder with push switch
+2x 1x8 pin socket for board interconnection
+7x Thonkiconn 3.5mm Jack
+1x SSD1306 0.96" I2C OLED display module (with GND-VCC-SCL-SDA pinout)
+4x 2mm Red LED
+4x 470R 1/8w resistor
+4x 39k 1/8 resistor
+4x 10k 1/8 resistor
+1x MCP6004 IC in DIP-14 package
+1x 10u MLCC Ceramic Capacitor
+1x 100n MLCC Ceramic Capacitor
+
+
+Expander 1:
+
+5x Thonkiconn 3.5mm Jack
+1x 2x4 pin header for expander module
+4x 2mm Red LED
+4x 2k Vishay T93YA/Bourns 3296W vertical trimmer

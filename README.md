@@ -16,12 +16,14 @@ This project currently provides the following modules:
 - [ClockForge](https://github.com/VoltageFoundryMod/ForgeSeries-CLK/) - A Clock Generator with multiple features like tap tempo, clock division, Euclidean rhythm and more.
 - [NoteForge](https://github.com/VoltageFoundryMod/ForgeSeries-DQ/) - A Dual Quantizer with selectable scales and root notes for each channel, octave shift and envelopes.
 - [ForgeView](https://github.com/VoltageFoundryMod/ForgeSeries-SCP/) - A scope visualizer with dual-trace, trigger and more.
+- [GravityForge](https://github.com/VoltageFoundryMod/ForgeSeries-GEN/) - A generative sequencer with multiple features.
 
 Modules can also be found on ModularGrid:
 
 - [ClockForge](https://modulargrid.net/e/other-unknown-clockforge-by-voltage-foundry-modular)
 - [NoteForge](https://modulargrid.net/e/other-unknown-NoteForge-by-voltage-foundry-modular)
 - [ForgeView](https://modulargrid.net/e/other-unknown-forgeview-by-voltage-foundry-modular)
+- [GravityForge](https://modulargrid.net/e/other-unknown-gravityforge-by-voltage-foundry-modular)
 
 Each new module firmware will be in a separate folder which can be built and uploaded to the Seeeduino Xiao using PlatformIO.
 
@@ -32,7 +34,7 @@ Each new module firmware will be in a separate folder which can be built and upl
 - Module depth: 42mm
 - On-board converter from 12V to internal 5V
 
-The module can be powered from the MCU USB port while in development mode and from Eurorack 5 pin when in calibration or use. Do not power from both at the same time as this might damage the module.
+The module can be powered from the MCU USB port while in development mode and from Eurorack 5 pin when in calibration or use. **Do not power from both at the same time as this might damage the module**.
 
 ## Project State and Compatibility
 
@@ -51,6 +53,10 @@ The module can be powered from the MCU USB port while in development mode and fr
 | Generative Sequencer | ❎    | V1 HW, Original firmware, not tested     |
 
 ## Hardware and PCB
+
+### Hardware V2
+
+### Hardware V1
 
 For the PCBs, the module has one main circuit PCB, one control circuit PCB and one panel PCB. The files are available in the [gerbers](./Hardware/gerbers/) directory. There are files for the main board V1 and V2. The control board and panel are the same for both versions.
 
@@ -104,6 +110,24 @@ or for the V2 main board:
 - 5 - Analog Out 2
 - 6 - Analog Out 3
 - 7 - Analog Out 4
+
+## Expander header
+
+The V2 main board has a 8 pin header for expanders. The pinout is as follows:
+
+```text
+|--------------------|
+|                    |
+|   1           2    |  VCC(3.3V)   SCL2
+|                    |
+|   3           4    |  VCC(OPAMP)  SDA2
+|                    |
+|   5           6    |  -10V(Ref)   GND
+|                    |
+|   7           8    |  GND         IN4
+|                    |
+----------------------
+```
 
 ## Assembly
 

@@ -1,0 +1,136 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-09T17:01:44",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.5",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/cbaae8a6-e9eb-4275-9331-558d782122bc",
+            "violations": [
+                {
+                    "description": "Pins of type Power output and Power output are connected",
+                    "items": [
+                        {
+                            "description": "Symbol #FLG02 Pin 1 [pwr, Power output, Line]",
+                            "pos": {
+                                "x": 0.5969,
+                                "y": 0.9779
+                            },
+                            "uuid": "63e2c222-442f-4143-93d0-da15d7548d4a"
+                        },
+                        {
+                            "description": "Symbol U4 Pin 2 [GND, Power output, Line]",
+                            "pos": {
+                                "x": 0.5969,
+                                "y": 0.9652
+                            },
+                            "uuid": "e86ab76a-000f-4980-b4cf-3b426c8f316b"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Input Power pin not driven by any Output Power pins",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR02 Hidden pin 1 [GND, Power input, Line]",
+                            "pos": {
+                                "x": 1.6764,
+                                "y": 1.016
+                            },
+                            "uuid": "cde30133-6d36-43e8-b891-145d17c38278"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                },
+                {
+                    "description": "Symbol 'R_Potentiometer' doesn't match copy in library 'Device'",
+                    "items": [
+                        {
+                            "description": "Symbol RV1 [R_Potentiometer]",
+                            "pos": {
+                                "x": 1.9939,
+                                "y": 1.0795
+                            },
+                            "uuid": "e9de8e85-3a13-4e8b-81ea-2aab530fe0e8"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'R_Potentiometer' doesn't match copy in library 'Device'",
+                    "items": [
+                        {
+                            "description": "Symbol RV3 [R_Potentiometer]",
+                            "pos": {
+                                "x": 2.0066,
+                                "y": 1.3716
+                            },
+                            "uuid": "c6f408df-b3fc-40af-b1c4-4cc768028b42"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'R_Potentiometer' doesn't match copy in library 'Device'",
+                    "items": [
+                        {
+                            "description": "Symbol RV4 [R_Potentiometer]",
+                            "pos": {
+                                "x": 2.6035,
+                                "y": 1.397
+                            },
+                            "uuid": "37bbaaaf-4b8f-4142-a264-29e66e2c4da6"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'R_Potentiometer' doesn't match copy in library 'Device'",
+                    "items": [
+                        {
+                            "description": "Symbol RV2 [R_Potentiometer]",
+                            "pos": {
+                                "x": 2.6289,
+                                "y": 1.0795
+                            },
+                            "uuid": "15cecfc9-ebe9-4b52-ad9b-9a941af1114b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                }
+            ]
+        }
+    ],
+    "source": "MainPCB_SMD_V3.0.kicad_sch"
+}
